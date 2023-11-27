@@ -6,11 +6,14 @@ body {
 #bg {
   width: 100vw;
   height: 100vh;
-  background: url("../../img/room.png") center;
+  background: url("../../img/room.svg") center;
   background-size: cover;
   opacity: 30%;
   position: absolute;
   z-index: -1000;
+  background-color: rgb(189,
+        224,
+        254);
 }
 
 #container {
@@ -55,27 +58,27 @@ body {
 }
 
 #health {
-  background: url("../../img/status_bar/health.png") center;
+  background: url("../../img/status_bar/health.svg") center;
   background-size: contain;
 }
 
 #hunger {
-  background: url("../../img/status_bar/hunger.png") center;
+  background: url("../../img/status_bar/hunger.svg") center;
   background-size: contain;
 }
 
 #cleanliness {
-  background: url("../../img/status_bar/cleanliness.png") center;
+  background: url("../../img/status_bar/cleanliness.svg") center;
   background-size: contain;
 }
 
 #happiness {
-  background: url("../../img/status_bar/happiness.png") center;
+  background: url("../../img/status_bar/happiness.svg") center;
   background-size: contain;
 }
 
 .bar {
-  background: url("../../img/status_bar/bar5.png") center no-repeat;
+  background: url("../../img/status_bar/bar5.svg") center no-repeat;
   background-size: contain;
   width: 20px;
   height: auto;
@@ -87,12 +90,11 @@ body {
   top: 0;
   left: 0;
   display: none;
+  margin: 20px;
 
 }
 
 #hatch {
-  padding: 20px;
-  border: 0.2px solid black;
   z-index: 100;
 }
 
@@ -100,17 +102,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .button {
-  margin: 20px;
   padding: 10px 20px;
-  border: 0.2px solid black;
+  border: 3px solid black;
   z-index: 100;
   height: fit-content;
   font-size: 1.5rem;
   cursor: pointer;
   background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .button:hover {

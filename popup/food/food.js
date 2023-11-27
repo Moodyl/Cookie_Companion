@@ -127,13 +127,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
           cookieItem.appendChild(cookieSprite);
           cookieItem.appendChild(cookieDetails);
+          cookieSprite.appendChild(cookieSelect);
 
           cookieDetails.appendChild(cookieName);
           // cookieDetails.appendChild(cookieValue);
           cookieDetails.appendChild(cookiePath);
           cookieDetails.appendChild(cookieExp);
           if (cookie.secure == true) { cookieDetails.appendChild(cookieSecure) };
-          cookieDetails.appendChild(cookieSelect);
 
 
 
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (selectedItems.length > 0) {
               feedButton.style.display = "block";
-              feedButtonCount.innerText = selectedItems.length + " selected";
+              feedButtonCount.innerText = selectedItems.length + " items selected";
             } else {
               feedButton.style.display = "none";
             }

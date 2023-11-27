@@ -1,0 +1,124 @@
+body {
+  min-width: 1000px;
+  aspect-ratio: 1 / 1;
+}
+
+#bg {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../img/room.png") center;
+  background-size: cover;
+  opacity: 30%;
+  position: absolute;
+  z-index: -1000;
+}
+
+#container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#companion {
+  background: center no-repeat;
+  background-size: contain;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  display: none;
+}
+
+#status-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  /* border: 0.2px solid black; */
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 12%;
+}
+
+.status-element {
+  width: 70px;
+  aspect-ratio: 1 / 1;
+  /* border: 0.2px solid red; */
+}
+
+#health {
+  background: url("../../img/status_bar/health.png") center;
+  background-size: contain;
+}
+
+#hunger {
+  background: url("../../img/status_bar/hunger.png") center;
+  background-size: contain;
+}
+
+#cleanliness {
+  background: url("../../img/status_bar/cleanliness.png") center;
+  background-size: contain;
+}
+
+#happiness {
+  background: url("../../img/status_bar/happiness.png") center;
+  background-size: contain;
+}
+
+.bar {
+  background: url("../../img/status_bar/bar5.png") center no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: auto;
+  /* border: 0.2px solid green; */
+}
+
+#actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+
+}
+
+#hatch {
+  padding: 20px;
+  border: 0.2px solid black;
+  z-index: 100;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: 0.2px solid black;
+  z-index: 100;
+  height: fit-content;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+}
+
+.tag {
+  flex-grow: 1;
+  text-align: center;
+}

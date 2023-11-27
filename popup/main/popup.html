@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cookie Companion</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="CC – SUPSI 2023" />
+    <meta name="keywords" content="Creative, Coding, SUPSI, 2023" />
+    <meta name="web_author" content="Lauro Gianella" />
+    <meta name="copyright" content="Lauro Gianella" />
+    <link href="../../reset.css" rel="stylesheet" />
+    <link href="popup.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="bg"></div>
+    <div id="container">
+
+        <div class="flex button" id="hatch" >HATCH</div>
+        <div class="flex" id="actions">
+            <div class="flex button" id="food">FOOD</div>
+            <div class="flex button" id="clean">CLEAN</div>
+            <div class="flex button" id="play">PLAY</div>
+        </div>
+        <div class="flex" id="companion"></div>
+
+        <div id="status-bar">
+            <div class="wrapper">
+                <div class="status-element" id="health"></div>
+                <div class="bar" id="health-bar"></div>
+                <span class="tag">Health</span>
+            </div>
+            <div class="wrapper">
+                <div class="status-element" id="hunger"></div>
+                <div class="bar" id="hunger-bar"></div>
+                <span class="tag">Hunger</span>
+            </div>
+
+            <div class="wrapper">
+                <div class="status-element" id="cleanliness"></div>
+                <div class="bar" id="cleanliness-bar"></div>
+                <span class="tag">Cleanliness</span>
+            </div>
+
+            <div class="wrapper">
+                <div class="status-element" id="happiness"></div>
+                <div class="bar" id="happiness-bar"></div>
+                <span class="tag">Happiness</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="popup.js"></script>
+
+</html>

@@ -1,0 +1,158 @@
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 0.2px solid black;
+    padding: 20px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+}
+
+#display>*,
+#sort>* {
+    padding: 10px;
+    border: 0.2px solid black;
+    cursor: pointer;
+}
+
+#display>*:hover,
+#sort>*:hover {
+    background-color: black;
+    color: white;
+}
+
+#sort {
+    display: flex;
+    gap: 10px;
+}
+
+#feed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(220, 19, 19);
+    border: 1px solid rgb(220, 19, 19);
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#feed:hover {
+    color: rgb(220, 19, 19);
+    background-color: white;
+}
+
+#feed-count {
+    font-size: 0.7rem;
+    width: 100%;
+    height: fit-content;
+    display: block;
+}
+
+.domain-item {
+    padding: 10px 0px;
+    margin: 0px 10px 50px 10px;
+    font-size: 1rem;
+    border-top: 0.2px solid gray;
+}
+
+.cookie-group {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cookie-item {
+    display: flex;
+    flex-flow: row nowrap;
+    border: 0.2px solid black;
+    padding: 10px;
+    height: 100px;
+    aspect-ratio: 2 / 1;
+    font-family: "Monument-Regular";
+    overflow: ;
+    font-size: 0.6rem;
+    cursor: pointer;
+    z-index: 0;
+    background-color: rgb(242, 242, 242);
+}
+
+.cookie-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.cookie-sprite {
+    aspect-ratio: 1 / 1;
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cookie-details {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+}
+
+.cookie-name {
+    font-family: "Monument-Bold";
+}
+
+/* .cookie-value,
+.cookie-path,
+.cookie-exp,
+.cookie-secure,
+.cookie-details {
+    display: none;
+} */
+
+.cookie-select {
+    padding: 10px;
+    border: 0.2px solid black;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    color: black;
+    z-index: 1000;
+    display: none;
+}
+
+.toggle-row {
+    flex-flow: column nowrap;
+}
+
+.toggle-row-items {
+    aspect-ratio: auto;
+    width: auto;
+    border-bottom: none;
+    height: fit-content;
+}
+
+.toggle-row-items:last-of-type {
+    aspect-ratio: auto;
+    width: auto;
+    border-bottom: 0.2px solid black;
+}
+
+.toggle-row-details {
+    display: none;
+}
+
+.selected {
+    border: 1px solid rgb(220, 19, 19);
+    color: white;
+    background-color: rgb(88, 0, 0);
+}
